@@ -1,0 +1,9 @@
+<div class="container mt-4">
+  <h4>{{ title }}</h4>
+  <p>{{ content }}</p>
+  <div class="p-1 btn-group" *ngFor="let person of topFive">
+    <a [routerLink]="['/person', person]" class="btn btn-primary text-white">
+      {{ person }}
+    </a>
+  </div>
+</div>
